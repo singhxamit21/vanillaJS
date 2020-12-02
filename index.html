@@ -4,34 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
+    <link href="style.css" rel="stylesheet" />
     <style>
+
+        :root{
+            --primery-color:#FCD34D;
+        }
+
+        .resize{
+            padding-top: 2rem;
+        }
+
         textarea{
-            width: 90%;
-            height: 10vh;
+            width: 50%;
+            height: 30vh;
             display: block;
-            margin: 1rem;
-            padding: 1rem;
+            margin: auto;
             
         }
         #output{
             border: 1px solid black;
             height: 10vh;
-            width: 80%;
-            margin: 1rem;
+            width: 50%;
+            margin: auto;
             padding: 1rem;
+        }
+        #btn-translate{
+            background-color: var(--primery-color);
+            font-weight: bold;
+            margin-left: 23.4rem;
+            margin-top: 1rem;
+            padding: 1rem 1rem;
+        }
+        .size-fixing{
+            font-weight: bold;
+            margin-left: 22.6rem;
+            margin-top: 1rem;
+            padding: 1rem 1rem;
+        }
+        .navigation{
+            background-color: var(--primery-color);
+             color:black;
+             padding: 3rem;
+        }
+        .textsize{
+            margin: auto;
+            padding-left: 40rem;
+            font-weight: bold;
+            font-size: 1.5rem;
         }
 
     </style>
     
 </head>
 <body>
-    <h1>talk banana</h1>
-    <textarea id="txt-input" placeholder="put your sentence in English here we will convert it to banana "></textarea>
-    <button id="btn-translate">Translate</button>
+    <nav class="navigation">
+        <div class="textsize">Banana Talk</div>
 
-    <div>output will come here 👇</div>
+    </nav>
+    <div class="resize">
+        <textarea id="txt-input" placeholder="put your sentence in English here we will convert it to banana "></textarea>
+    </div>
+
+    <button id="btn-translate">Translate to Banana</button>
+
+    <div class="size-fixing">output will come here 👇</div>
     <div id="output"></div>
     <script src="app.js" type="text/javascript"></script>
+
     
 </body>
 </html>
